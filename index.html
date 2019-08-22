@@ -11,27 +11,34 @@
                     background-color: rgb(255, 253, 250);
                 }
 
-                #sideleft {
-                  float: left;
-                  position: fixed;
+                #side-right {
+                  float: right;
+                  position:
                   padding: 5px;
-                  width: 20%;
+                  width: 25%;
                   height: 100%;
                   border: 3px solid black;
+                  margin: 15px;
                 }
 
-                #main {
-                  float: right;
-                  width: 80%;
+                #side-left {
+                  width: 70%;
+                  height: 100%;
+                  clear: left;
+
                 }
 
                 #top-bar {
+                  background-color: rgb(237, 160, 66);
+                  color: rgb(255, 253, 250);
+
                 }
 
+              .back-to-top {
+                text-align: center;
+              }
+
                 h1 {
-                    background-color: rgb(237, 160, 66);
-                    color: rgb(255, 253, 250);
-                    padding-left: 5px;
                 }
 
                 h2 {
@@ -46,19 +53,17 @@
                 }
 
                 .tasty-pics {
-                  width: 40%;
+                  width: 25%;
                   float: left;
-                  margin-right: 10px;
+                  margin-right: 30px;
+                  margin-bottom: 15px;
                   border: 8px ridge rgba(230, 200, 181, 0.74);
                 }
 
                 .recipe-info {
-                  clear: right;
-                  overflow-y: auto;
                 }
 
-                .recipe-body {
-                  clear: both;
+                  width: 70%;
                 }
 
                 th {
@@ -73,32 +78,31 @@
         </style>
     </head>
     <body>
+      <div id="side-right">
+        <h2>Contents:</h2>
 
-      <div id="sideleft">
-      <h2>Contents:</h2>
+          <ol>
+              <li><a href="#pancakes">Pancakes</a></li>
+              <li><a href="#friedrice">Fried Rice</a></li>
+              <li><a href="#scallopedpotatoes">Baked Scalloped Potatoes</a></li>
+          </ol>
 
-        <ol>
-            <li><a href="#pancakes">Pancakes</a></li>
-            <li><a href="#friedrice">Fried Rice</a></li>
-            <li><a href="#scallopedpotatoes">Baked Scalloped Potatoes</a></li>
-        </ol>
+          <p><em>The Little Oven Cookbook</em> is the beginning of what I hope will one day be an <strong>actual cook book.</strong> </p>
+          <p>This is the <em>first webpage</em> in my <a href="https://github.com/tfilipow7" target="-_blank"><strong>Web Developement Porfolio</strong></a>. </p>
 
-        <p><em>Tim's Recipe Book</em> is the beginning of what I hope will one day be an <strong>actual cook book.</strong> </p>
-        <p>This is my <em>first webpage</em> and it will continue to form a part of my <a href="https://github.com/tfilipow7" target="-_blank">Web Developement Porfolio</a>. </p>
+        </div>
 
-      </div>
-
-    <div id="main">
-
-      <div id="top-bar">
-        <h1>The Little Oven Cookbook</h1>
-      </div>
 
 <!-- Pancakes -->
+<div id="side-left">
 
-        <img class="tasty-pics" src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Blueberry_pancakes_%281%29.jpg" alt="Delicious pancakes covered in berries, nuts, butter, and syrup.">
         <div class="recipe-info">
+
+          <h1 id="top-bar">The Little Oven Cookbook</h1>
           <h2 class="recipeheading" id="pancakes">Pancakes</h2>
+          <img class="tasty-pics" src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Blueberry_pancakes_%281%29.jpg" alt="Delicious pancakes covered in berries, nuts, butter, and syrup.">
+
+          <h4> Info </h4>
         <ul>
             <li>Time: 20 Minutes</li>
             <li>Serves: 2-4</li>
@@ -132,18 +136,21 @@
         </table>
       </div>
 
-    <div class="recipe-body">
+      <div class="recipe-body">
 
         <p><strong>Step 1:</strong> Sift the flour, sugar, baking powder, and salt into a large bowl. Whisk the water and oil together in a small bowl. Make a well in the center of the dry ingredients, and pour in the wet. Stir just until blended; mixture will be lumpy.<br>
         <strong>Step 2:</strong>Heat a lightly oiled griddle over medium-high heat. Drop batter by large spoonfuls onto the griddle, and cook until bubbles form and the edges are dry. Flip, and cook until browned on the other side. Repeat with remaining batter.</p>
 
     <p><em>Source: <a href="https://www.allrecipes.com/recipe/191885/vegan-pancakes/">AllRecipes.com</a></em></p>
-
-   </div>
+    <p class="back-to-top">
+      <a href="#top-bar"> Back to Top</a>
+    </p>
+      </div>
 
 <!-- Fried Rice -->
 
         <h2 class="recipeheading" id="friedrice">Fried Rice</h2>
+
         <img class="tasty-pics" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Nasi_goreng_Chinese_style.JPG" alt="Golden Fried Rice with veggies and a compliment of sauces." width="200">
 
         <div class="recipe-info">
@@ -190,13 +197,15 @@
       <div class="recipe-body">
         <p><strong>Step 1:</strong>Heat olive oil in a large skillet over medium-high heat. Add rice; cook and stir until heated through, 2 to 3 minutes. Stir in soy sauce and sesame oil. Add onion, red bell pepper, mushrooms, and green onions; cook and stir until tender, 5 to 10 minutes.</p>
      <p><em>Source: <a href="https://www.allrecipes.com/recipe/246769/vegan-fried-rice/">AllRecipes.com</a></em></p>
+     <p class="back-to-top">
+       <a href="#top-bar"> Back to Top</a>
+     </p>
      </div>
 
 <!-- Baked Scalloped Potates -->
         <h2 class="recipeheading" id="scallopedpotatoes">Baked Scalloped Potatoes</h2>
         <img class="tasty-pics" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Potatoes_gratin%C3%A9.JPG/712px-Potatoes_gratin%C3%A9.JPG" alt="A fresh out of the oven dish of crispy, golden layers of potatoes." width="200">
 
-        <div class="recipe-info">
         <ul>
             <li>Time: 1 Hour 30 Minutes</li>
             <li>Serves: 8 </li>
@@ -227,17 +236,21 @@
                 </tr>
             </tbody>
         </table>
-      </div>
+
+
 
         <div class="recipe-body">
         <p><strong>Step 1:</strong> Preheat oven to 375 degrees F (190 degrees C). Grease a 2 quart casserole dish.<br>
         <strong>Step 2:</strong> Layer potatoes and onions into the casserole dish. Combine soup, milk and pepper in a bowl, then pour soup mixture over the potatoes and onions. The soup mixture should almost cover the potatoes and onion, if it does not add extra milk. <br>
         <strong>Step 3:</strong> Cover dish and bake in preheated 375 degrees F (190 degrees C) oven for 60 minutes or until the potatoes are cooked through. At 30 minutes, remove the casserole from the oven and stir once before returning the dish to the oven. Remove from oven and serve.</p>
-       </div>
+        <p><em>Source: <a href="https://www.allrecipes.com/recipe/18346/baked-scalloped-potatoes/">AllRecipes.com</a></em></p>
+        <p class="back-to-top">
+          <a href="#top-bar"> Back to Top</a>
+        </p>
+        </div>
 
-    <p><em>Source: <a href="https://www.allrecipes.com/recipe/18346/baked-scalloped-potatoes/">AllRecipes.com</a></em></p>
+     </div>
 
-  </div>
 
 
     </body>
