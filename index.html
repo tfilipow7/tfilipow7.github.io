@@ -10,6 +10,25 @@
             background-color: rgb(255, 253, 250);
         }
 
+
+        #sidebar {
+          float: left;
+          width: 20%;
+          position: fixed;
+          height: 100%;
+          padding: 5px;
+          margin: 5px;
+          border: 3px solid black;
+        }
+
+        #main {
+          width: 80%;
+          float: right;
+          padding: 5px;
+        }
+        #top-bar {
+        }
+
         h1 {
             background-color: rgb(237, 160, 66);
             color: rgb(255, 253, 250);
@@ -34,8 +53,12 @@
 
         .recipe-info {
           clear: right;
+          overflow-y: auto;
         }
 
+        th {
+          text-decoration: underline;
+        }
 
         .quantity {
             font-weight: bold;
@@ -45,17 +68,28 @@
     </head>
     <body>
 
-        <h1>Tim's Recipe Book</h1>
-
-        <p><em>Tim's Recipe Book</em> is the beginning of what I hope will one day be an <strong>actual cook book.</strong> This is my first webpage and it will continue to form a part of my <a href="https://github.com/tfilipow7" target="-_blank">Web Developement Porfolio</a>. </p>
-
-        <h2>Contents:</h2>
+      <div id="sidebar">
+      <h2>Contents:</h2>
 
         <ol>
             <li><a href="#pancakes">Pancakes</a></li>
             <li><a href="#friedrice">Fried Rice</a></li>
             <li><a href="#scallopedpotatoes">Baked Scalloped Potatoes</a></li>
         </ol>
+
+        <p><em>Tim's Recipe Book</em> is the beginning of what I hope will one day be an <strong>actual cook book.</strong> </p>
+        <p>This is my <em>first webpage</em> and it will continue to form a part of my <a href="https://github.com/tfilipow7" target="-_blank">Web Developement Porfolio</a>. </p>
+
+      </div>
+
+    <div id="main">
+
+      <div id="top-bar">
+        <h1>Tim's Recipe Book</h1>
+
+
+      </div>
+
 
 <!-- Pancakes -->
 
@@ -93,18 +127,18 @@
                 </tr>
             </tbody>
         </table>
-      </div>
 
         <p><strong>Step 1:</strong> Sift the flour, sugar, baking powder, and salt into a large bowl. Whisk the water and oil together in a small bowl. Make a well in the center of the dry ingredients, and pour in the wet. Stir just until blended; mixture will be lumpy.<br>
-        <strong>Step 2:</strong>Heat a lightly oiled griddle over medium-high heat. Drop batter by large spoonfuls onto the griddle, and cook until bubbles form and the edges are dry. Flip, and cook until browned on the other side. Repeat with remaining batter.
-</p>
+        <strong>Step 2:</strong>Heat a lightly oiled griddle over medium-high heat. Drop batter by large spoonfuls onto the griddle, and cook until bubbles form and the edges are dry. Flip, and cook until browned on the other side. Repeat with remaining batter.</p>
+      </div>
+
     <p><em>Source: <a href="https://www.allrecipes.com/recipe/191885/vegan-pancakes/">AllRecipes.com</a></em></p>
 <!-- Fried Rice -->
-<!--
 
         <h2 class="recipeheading" id="friedrice">Fried Rice</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Nasi_goreng_Chinese_style.JPG" alt="Golden Fried Rice with veggies and a compliment of sauces." width="200">
+        <img class="tasty-pics" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Nasi_goreng_Chinese_style.JPG" alt="Golden Fried Rice with veggies and a compliment of sauces." width="200">
 
+        <div class="recipe-info">
         <ul>
             <li>Time: 25 Minutes </li>
             <li>Serves: 2 </li>
@@ -144,16 +178,15 @@
             </tbody>
         </table>
 
-        <p><strong>Step 1:</strong>Heat olive oil in a large skillet over medium-high heat. Add rice; cook and stir until heated through, 2 to 3 minutes. Stir in soy sauce and sesame oil. Add onion, red bell pepper, mushrooms, and green onions; cook and stir until tender, 5 to 10 minutes.
-</p>
+        <p><strong>Step 1:</strong>Heat olive oil in a large skillet over medium-high heat. Add rice; cook and stir until heated through, 2 to 3 minutes. Stir in soy sauce and sesame oil. Add onion, red bell pepper, mushrooms, and green onions; cook and stir until tender, 5 to 10 minutes.</p>
+      </div>
      <p><em>Source: <a href="https://www.allrecipes.com/recipe/246769/vegan-fried-rice/">AllRecipes.com</a></em></p>
--->
 
 <!-- Baked Scalloped Potates -->
-<!--
         <h2 class="recipeheading" id="scallopedpotatoes">Baked Scalloped Potatoes</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Potatoes_gratin%C3%A9.JPG/712px-Potatoes_gratin%C3%A9.JPG" alt="A fresh out of the oven dish of crispy, golden layers of potatoes." width="200">
+        <img class="tasty-pics" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Potatoes_gratin%C3%A9.JPG/712px-Potatoes_gratin%C3%A9.JPG" alt="A fresh out of the oven dish of crispy, golden layers of potatoes." width="200">
 
+        <div class="recipe-info">
         <ul>
             <li>Time: 1 Hour 30 Minutes</li>
             <li>Serves: 8 </li>
@@ -187,10 +220,13 @@
 
         <p><strong>Step 1:</strong> Preheat oven to 375 degrees F (190 degrees C). Grease a 2 quart casserole dish.<br>
         <strong>Step 2:</strong> Layer potatoes and onions into the casserole dish. Combine soup, milk and pepper in a bowl, then pour soup mixture over the potatoes and onions. The soup mixture should almost cover the potatoes and onion, if it does not add extra milk. <br>
-        <strong>Step 3:</strong> Cover dish and bake in preheated 375 degrees F (190 degrees C) oven for 60 minutes or until the potatoes are cooked through. At 30 minutes, remove the casserole from the oven and stir once before returning the dish to the oven. Remove from oven and serve. <br>
-</p>
+        <strong>Step 3:</strong> Cover dish and bake in preheated 375 degrees F (190 degrees C) oven for 60 minutes or until the potatoes are cooked through. At 30 minutes, remove the casserole from the oven and stir once before returning the dish to the oven. Remove from oven and serve.</p>
+      </div>
 
     <p><em>Source: <a href="https://www.allrecipes.com/recipe/18346/baked-scalloped-potatoes/">AllRecipes.com</a></em></p>
--->
+
+  </div>
+
+
     </body>
 </html>
