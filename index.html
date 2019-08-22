@@ -3,76 +3,78 @@
 <html>
     <head>
         <title>Project: Recipe book</title>
+      <!--  <link href="./style.css" rel="stylesheet" type="text/css"> -->
         <meta charset="utf-8">
         <style>
 
-        body {
-            background-color: rgb(255, 253, 250);
-        }
+                body {
+                    background-color: rgb(255, 253, 250);
+                }
 
-        #sidebar {
-          float: left;
-          width: 20%;
-          position: fixed;
-          height: 100%;
-          padding: 5px;
-          margin: 5px;
-          border: 3px solid black;
-        }
+                #sideleft {
+                  float: left;
+                  position: fixed;
+                  padding: 5px;
+                  width: 20%;
+                  height: 100%;
+                  border: 3px solid black;
+                }
 
-        #main {
-          width: 80%;
-          float: right;
-          padding: 5px;
-        }
+                #main {
+                  float: right;
+                  width: 80%;
+                }
 
-        #top-bar {
-        }
+                #top-bar {
+                }
 
-        h1 {
-            background-color: rgb(237, 160, 66);
-            color: rgb(255, 253, 250);
-        }
+                h1 {
+                    background-color: rgb(237, 160, 66);
+                    color: rgb(255, 253, 250);
+                    padding-left: 5px;
+                }
 
-        h2 {
-            background-color: rgb(175, 103, 219);
-            color: rgb(255, 253, 250);
-        }
+                h2 {
+                    background-color: rgb(175, 103, 219);
+                    color: rgb(255, 253, 250);
+                    padding: 5px;
+                }
 
-        .recipeheading {
-            background-color: rgb(91, 70, 171);
-            text-align: center;
-        }
+                .recipeheading {
+                    background-color: rgb(91, 70, 171);
+                    text-align: center;
+                }
 
-        .tasty-pics {
-          width: 40%;
-          float: left;
-          margin-right: 10px;
-        }
+                .tasty-pics {
+                  width: 40%;
+                  float: left;
+                  margin-right: 10px;
+                  border: 8px ridge rgba(230, 200, 181, 0.74);
+                }
 
-        .recipe-info {
-          clear: right;
-          overflow-y: auto;
-        }
+                .recipe-info {
+                  clear: right;
+                  overflow-y: auto;
+                }
 
-        .recipe-body {
-          clear: both;
-        }
+                .recipe-body {
+                  clear: both;
+                }
 
-        th {
-          text-decoration: underline;
-        }
+                th {
+                  text-decoration: underline;
+                }
 
-        .quantity {
-            font-weight: bold;
-            padding: 10px;
-        }
+                .quantity {
+                    font-weight: bold;
+                    padding: 10px;
+                }
 
         </style>
     </head>
     <body>
 
-      <div id="sidebar">
+      <div id="sideleft">
       <h2>Contents:</h2>
 
         <ol>
@@ -89,17 +91,14 @@
     <div id="main">
 
       <div id="top-bar">
-        <h1>Tim's Recipe Book</h1>
-
-
+        <h1>The Little Oven Cookbook</h1>
       </div>
-
 
 <!-- Pancakes -->
 
-        <h2 class="recipeheading" id="pancakes">Pancakes</h2>
         <img class="tasty-pics" src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Blueberry_pancakes_%281%29.jpg" alt="Delicious pancakes covered in berries, nuts, butter, and syrup.">
         <div class="recipe-info">
+          <h2 class="recipeheading" id="pancakes">Pancakes</h2>
         <ul>
             <li>Time: 20 Minutes</li>
             <li>Serves: 2-4</li>
