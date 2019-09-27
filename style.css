@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(255, 253, 250);
 }
@@ -50,7 +54,7 @@ p {
 }
 
 .tasty-pics {
-  width: 25%;
+  width: 35%;
   float: left;
   margin-right: 30px;
   margin-bottom: 15px;
