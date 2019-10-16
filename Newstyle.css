@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+}
+
+.mainNav {
+  width: 15%;
+}
+
+.popNav {
+  width: 20%;
+}
+
+main {
+
+}
