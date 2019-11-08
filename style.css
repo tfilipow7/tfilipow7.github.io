@@ -10,7 +10,7 @@ nav {
   padding: 20px;
   width: 180px;
   height: 100%;
-  border: 1px dotted magenta;
+  border: 1px dotted aqua;
   margin: 10px;
   position: fixed;
 }
@@ -18,8 +18,10 @@ nav {
 main {
   height: 100%;
   margin: 10px;
+  width: 60%;
   position: relative;
   left: 200px;
+  align-content: flex-start;
 }
 
 h2 {
@@ -51,6 +53,8 @@ th {
   color: rgb(255, 253, 250);
 }
 
+.nav-section {
+}
 .back-to-top {
   text-align: center;
 }
@@ -61,7 +65,8 @@ th {
 }
 
 .tasty-pics {
-  width: 35%;
+  width: 100%;
+  max-width: 720px;
   float: left;
   margin-right: 30px;
   margin-bottom: 15px;
