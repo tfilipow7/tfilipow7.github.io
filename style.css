@@ -3,29 +3,40 @@
 }
 
 body {
+  display: inline-flex;
   background-color: rgb(255, 253, 250);
 }
 
 nav {
-  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
   width: 180px;
   height: 100%;
-  border: 1px dotted magenta;
+  border: 1px dotted aqua;
   margin: 10px;
-  position: fixed;
 }
 
 main {
   height: 100%;
+  padding: 10px;
   margin: 10px;
-  position: relative;
-  left: 200px;
+  width: auto;
+  align-content: flex-start;
 }
 
 h2 {
+  text-align: center;
+}
+nav h2 {
   background-color: rgb(175, 103, 219);
   color: rgb(255, 253, 250);
   padding: 5px;
+}
+main h2 {
+  color: rgb(255, 253, 250);
+  background-color: rgb(175, 103, 219);
+
 }
 
 ol {
@@ -51,17 +62,22 @@ th {
   color: rgb(255, 253, 250);
 }
 
+.nav-section {
+  width: 150px;
+}
 .back-to-top {
   text-align: center;
 }
 
-.recipeheading {
+.recipeheading h2 {
   background-color: rgb(91, 70, 171);
   text-align: center;
 }
 
+
 .tasty-pics {
-  width: 35%;
+  width: 100%;
+  max-width: 720px;
   float: left;
   margin-right: 30px;
   margin-bottom: 15px;
