@@ -9,7 +9,8 @@ body {
 
 nav {
   display: flex;
-  padding: 20px;
+  flex-wrap: wrap;
+  padding: 10px;
   width: 180px;
   height: 100%;
   border: 1px dotted aqua;
@@ -18,17 +19,24 @@ nav {
 
 main {
   height: 100%;
+  padding: 10px;
   margin: 10px;
-  width: 60%;
-  position: relative;
-  left: 200px;
+  width: auto;
   align-content: flex-start;
 }
 
 h2 {
+  text-align: center;
+}
+nav h2 {
   background-color: rgb(175, 103, 219);
   color: rgb(255, 253, 250);
   padding: 5px;
+}
+main h2 {
+  color: rgb(255, 253, 250);
+  background-color: rgb(175, 103, 219);
+
 }
 
 ol {
@@ -55,17 +63,17 @@ th {
 }
 
 .nav-section {
-  flex-wrap: wrap;
-  width: 80%;
+  width: 150px;
 }
 .back-to-top {
   text-align: center;
 }
 
-.recipeheading {
+.recipeheading h2 {
   background-color: rgb(91, 70, 171);
   text-align: center;
 }
+
 
 .tasty-pics {
   width: 100%;
