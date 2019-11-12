@@ -1,5 +1,5 @@
 body{
-  display: inline-flex;
+  display: flex;
 }
 
 header h1 {
@@ -11,10 +11,34 @@ nav {
   display: inline-flex;
   flex-direction: column;
   flex: 1 1 180px;
+  background-color: blue;
+  margin: 10px;
+  padding: 10px;
 }
 
 
 main {
  display: flex;
  flex-direction: column;
+ background color: green;
+ margin: 10px;
+ padding: 10px;
+}
+
+.recipe-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-card {
+  display: flex;
+
+}
+
+.recipe-card header {
+  width: 100%;
+}
+
+.recipe-card img {
+  flex: 1 1 100px;
 }
