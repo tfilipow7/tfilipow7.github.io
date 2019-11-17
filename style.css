@@ -72,6 +72,11 @@ th {
   flex-basis: 1 1 800px;
 }
 
+.recipe-box {
+  display: flex;
+  flex-direction: row wrap;
+}
+
 .recipe-title {
   background-color: rgb(91, 70, 171);
   text-align: center;
