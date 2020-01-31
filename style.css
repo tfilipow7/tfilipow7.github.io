@@ -1,42 +1,41 @@
 nav {
   position: fixed;
-  margin: 15px;
+  left: 0;
   width: 170px;
   height: 100%;
+  padding: 0px 10px;
   background-color: rgb(236, 188, 133);
-  }
+}
 
 main {
-  width: 100%;
-  position: relative;
-  left: 200px;
-  margin: 15px;
+  margin-left: 185px;
   background: rgb(152, 244, 202);
   overflow: auto;
+  padding: 30px;
 }
 
 .recipe-card {
-  display: flex;
-  flex-flow: row wrap;
+  display: block;
 }
 
-.recipe-card h2 {
+.recipe-title {
   width: 100%;
   text-align: center;
 }
 
-.card-recipe {
+.recipe-box {
   display: flex;
-  flex-flow: row wrap;
-}
-.card-image {
-  flex-basis: 1 1 300px;
+  flex: row wrap;
 }
 
-.card-list {
-  width: 40%;
-  flex-basis: 1 1 300px;
-  background-color: red;
+.recipe-img {
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+}
+
+.recipe-ingredients {
+  grid-column: 2/3;
 }
 
 .quantity {
